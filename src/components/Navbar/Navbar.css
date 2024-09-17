@@ -1,0 +1,108 @@
+.wick-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative; /* Make sure the navbar is positioned relative for absolute positioning of the menu */
+  background-color: #2c3e50;
+}
+
+.wick-logo {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.wick-navlist ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.wick-navlist ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.wick-navlist ul li a {
+   text-decoration: none;
+  color: #ffffff;
+    font-size: 16px;
+  border-radius: 25px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.wick-navlist ul li .wick-icon {
+  font-size: 22px;
+}
+
+.wick-navlist ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.wick-navlist ul li a.active {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+/* Media Queries for Mobile View */
+@media screen and (max-width: 768px) {
+  .wick-navbar {
+    flex-direction: row;
+    position: relative;
+  }
+
+  /* Hide the list initially */
+  .wick-navlist {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #2c3e50;
+    padding: 15px 0;
+    z-index: 1000;
+  }
+
+  /* Show list when menu is open */
+  .wick-navlist.wick-open {
+    display: block;
+    text-align: center;
+  }
+
+  .wick-navlist ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wick-navlist ul li {
+    display: block;
+  }
+
+  /* Hamburger icon styles */
+  .wick-hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-right: 15px;
+    z-index: 1001;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 769px) {
+  .wick-hamburger {
+    display: none;
+  }
+}
