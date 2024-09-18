@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import '../Navbar/Navbar.css';
+import  { useState } from 'react';
+import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { CgProfile } from "react-icons/cg";
 
@@ -29,10 +29,7 @@ function Navbar() {
               <Link to='/' onClick={toggleMenu}>Home</Link>
             </li>
             <li>
-              <Link to='/matches' onClick={toggleMenu}>Matches</Link>
-            </li>
-            <li>
-              <Link to='/turnaments' onClick={toggleMenu}>Tournamnet</Link>
+              <Link to='/turnaments' onClick={toggleMenu}>Turnaments</Link>
             </li>
             <li>
               <Link to='/registor' onClick={toggleMenu}>Register</Link>

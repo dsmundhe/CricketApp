@@ -7,6 +7,7 @@ import Contact from '../Contact/Contact';
 import Registration from '../Registration/Registration'
 import Matches from '../Matches/Matches'
 import Login from '../Login/Login'
+
 function Layout() {
     return (
         <div>

@@ -21,6 +21,7 @@ function Home() {
       </div>
       
       <Gallery />
+     
       <Sponsers />
       <Footer />
     </div>

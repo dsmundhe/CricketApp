@@ -1,11 +1,11 @@
-import '../Footer/Footer.css'; // Link to your CSS file
+import '../Footer/Footer.css'; // Ensure your CSS file is imported
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <h2 className="footer-heading">FOLLOW US</h2>
       <div className="footer-container">
-        
+       
         {/* Quick Links */}
         <div className="footer-column">
           <h2 className="footer-heading">Quick Links</h2>
@@ -23,21 +23,9 @@ function Footer() {
         <div className="footer-column">
           <h2 className="footer-heading">Social Media</h2>
           <ul className="social-links">
-            <li>
-              <a href="#" className="social-icon sl">
-                <i className="fab fa-facebook"></i> Facebook
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social-icon sl">
-                <i className="fab fa-twitter"></i> Twitter
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social-icon sl">
-                <i className="fab fa-instagram"></i> Instagram
-              </a>
-            </li>
+            <li><a href="#" className="social-icon sl"><i className="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#" className="social-icon sl"><i className="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#" className="social-icon sl"><i className="fab fa-instagram"></i> Instagram</a></li>
           </ul>
         </div>
 
@@ -57,6 +45,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

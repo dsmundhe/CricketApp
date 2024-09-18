@@ -1,9 +1,9 @@
 /* Sponsors Section Styles */
 .sponsors-section {
   background: linear-gradient(
-        rgba(0, 0, 0, 0.3), /* Gradient color and opacity */
-        rgba(0, 0, 0, 0.3) /* Gradient color and opacity */
-    ), url('https://images.unsplash.com/photo-1526392587392-d1627b6c134a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        rgba(0, 0, 0, 0.5), /* Gradient color and opacity */
+        rgba(0, 0, 0, 0.5) /* Gradient color and opacity */
+    ), url('../assets/img3.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   
   /* Sponsor Card Styles */
   .sponsor-card {
-    background-color: #ffffff3e; /* Tailwind's bg-white */
+    background-color: #e2e2e2d7; /* Tailwind's bg-white */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
     padding: 24px; /* Tailwind's p-6 */
     border-radius: 12px; /* Tailwind's rounded-lg */
