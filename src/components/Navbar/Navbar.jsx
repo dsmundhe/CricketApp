@@ -33,9 +33,15 @@ function Navbar() {
             <li>
               <Link to='/livematches' onClick={toggleMenu}>Live Matches</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/complete' onClick={toggleMenu}>Upcoming</Link>
             </li>
+            <li>
+              <Link to='/players' onClick={toggleMenu}>Players</Link>
+            </li>
+            <li>
+              <Link to='/scorecart' onClick={toggleMenu}>ScoreCart</Link>
+            </li> */}
             <li>
               <Link to='/turnaments' onClick={toggleMenu}>Organize</Link>
             </li>
@@ -45,7 +51,7 @@ function Navbar() {
             <li>
               <Link to='/contact' onClick={toggleMenu}>Contact us</Link>
             </li>
-        
+
             {
               profileData.length > 0 ? (<li><Link to='/profile' onClick={toggleMenu} className='wick-icon'><CgProfile /></Link>
               </li>) : (<></>)
