@@ -5,7 +5,22 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
-
+.namehead{
+  color: #ffffff;
+  text-shadow: 1px 1px 5px black;
+}
+.signupbtn{
+  background-color: #007bff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+.signupbtn:hover{
+  transform: scale(1.04);
+  background-color: #0261c6;
+}
 .home-container {
   color: #fff;
     background: linear-gradient(rgba(0, 0, 0, 0.304), rgba(0, 0, 0, 0.207)),

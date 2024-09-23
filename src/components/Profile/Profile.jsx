@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux'
 
 function Profile() {
     const upmatches = useSelector((val) => val.upcomingMatchs);
+    const profileData=useSelector((val)=>val.profile);
+    console.log(profileData)
 
     // Example user data (replace this with actual data from your state or API)
     const userData = {
@@ -16,7 +18,7 @@ function Profile() {
     };
 
     return (
-        <div>
+        <div className='pmainbox'>
             <div className="pcontainer">
                 <div className="pleft">
                     <div className="ptopleft">
@@ -51,15 +53,17 @@ function Profile() {
                 </div>
                 <div className="pright">
                     <div className="rightprofile">
-                        <div className="ptopright">
-                            <h2>User Profile</h2>
-                            <p><strong>Name:</strong> {userData.name}</p>
-                            <p><strong>Email:</strong> {userData.email}</p>
-                            <p><strong>Password:</strong> {userData.password}</p>
-                            <p><strong>Mobile:</strong> {userData.mobile}</p>
-                            <p><strong>Team Name:</strong> {userData.teamName}</p>
-                            <p><strong>Address:</strong> {userData.address}</p>
-                            <p><strong>Bio:</strong> {userData.bio}</p>
+                    <div className="ptopright">
+                             {
+                                profileData.length ==0?(<>Profile Data loading..........</>):(<><h2>User Profile</h2>
+                                    <p><strong>Name:</strong> {profileData[0].name}</p>
+                                    <p><strong>Email:</strong> {profileData[0].email}</p>
+                                    <p><strong>Password:</strong> {profileData[0].password}</p>
+                                    <p><strong>Mobile:</strong> {profileData[0].mobile}</p>
+                                    <p><strong>Team Name:</strong> {profileData[0].teamName}</p>
+                                    <p><strong>Address:</strong> {profileData[0].address}</p>
+                                    <p><strong>Bio:</strong> {profileData[0].bio}</p></>)
+                             }
                         </div>
                         <div className="pbottomright">
                             <h3>Completed Matches</h3>

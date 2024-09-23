@@ -3,6 +3,8 @@ import upcomingMatchs from './data'
 const initialState = {
     name: "Dipak Mundhe",
     upcomingMatchs,
+    profile: [],
+    livematch: [],
 }
 
 const cricketSlice = createSlice({
@@ -10,10 +12,15 @@ const cricketSlice = createSlice({
     initialState,
     reducers: {
         addData: (state, action) => {
-
+            const data = action.payload;
+            state.profile.push(data);
+        },
+        liveMatch: (state, action) => {
+            state.livematch = [];
+            state.livematch.push(action.payload)
         }
     }
 });
 
 export default cricketSlice.reducer;
-export const { addData } = cricketSlice.actions;  
+export const { addData,liveMatch } = cricketSlice.actions;  

@@ -1,24 +1,20 @@
 /* Background */
-body {
-    justify-content: center;
-    align-items: center;
-  }
+ 
   
   /* Login Page Container */
   .login-page {
-    margin-top: 10vh;
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
   
   .login-container {
     background: #ffffff;
     border-radius: 15px;
     padding: 50px 40px;
-    max-width: 400px;
+    max-width: 600px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: box-shadow 0.3s ease;

@@ -1,3 +1,8 @@
+.pmainbox{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+}
 .pcontainer {
     height: 100vh;
     width: 100%;
@@ -5,6 +10,7 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
+    margin-top: 50px;
 }
 
 .pcontainer .pleft {
@@ -113,7 +119,7 @@
     .pcontainer .pleft {
         width: 40%;
     }
-
+ 
     .pcontainer .pright {
         width: 60%;
     }
@@ -123,6 +129,7 @@
     .pcontainer {
         flex-direction: column;
         height: auto;
+        margin-top: 135vh;
     }
 
     .pcontainer .pleft,
@@ -148,7 +155,7 @@
     .pleft .ptopleft .livematch img {
         height: 150px;
     }
-
+ 
     .pright .rightprofile {
         width: 100%;
     }

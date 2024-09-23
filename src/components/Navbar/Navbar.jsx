@@ -1,10 +1,12 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { CgProfile } from "react-icons/cg";
-
+import { useSelector } from 'react-redux'
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const profileData = useSelector((val) => val.profile);
+  console.log(profileData)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -29,17 +31,25 @@ function Navbar() {
               <Link to='/' onClick={toggleMenu}>Home</Link>
             </li>
             <li>
-              <Link to='/turnaments' onClick={toggleMenu}>Turnaments</Link>
+              <Link to='/livematches' onClick={toggleMenu}>Live Matches</Link>
             </li>
             <li>
-              <Link to='/registor' onClick={toggleMenu}>Register</Link>
+              <Link to='/complete' onClick={toggleMenu}>Upcoming</Link>
+            </li>
+            <li>
+              <Link to='/turnaments' onClick={toggleMenu}>Organize</Link>
+            </li>
+            <li>
+              <Link to='/registor' onClick={toggleMenu}>Team Register</Link>
             </li>
             <li>
               <Link to='/contact' onClick={toggleMenu}>Contact us</Link>
             </li>
-            <li>
-              <Link to='/profile' onClick={toggleMenu} className='wick-icon'><CgProfile  /></Link>
-            </li>
+        
+            {
+              profileData.length > 0 ? (<li><Link to='/profile' onClick={toggleMenu} className='wick-icon'><CgProfile /></Link>
+              </li>) : (<></>)
+            }
           </ul>
         </div>
       </div>
