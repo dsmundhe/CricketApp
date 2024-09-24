@@ -12,8 +12,7 @@ import LiveMatches from '../LiveMatch/LiveMatches'
 import ShowMatch from '../ShowMatch/ShowMatch';
 import CompleteMatches from '../ComplitedMatches/CompleteMatches'
 import Players from '../Players/Players'
-import ScoreCart from '../ScoreCart/ScoreCart'
-
+ 
 function Layout() {
     return (
         <div>
@@ -32,8 +31,7 @@ function Layout() {
                     <Route path='/showmatch' element={<ShowMatch />} />
                     <Route path='/complete' element={<CompleteMatches />} />
                     <Route path='/players' element={<Players />} />
-                    <Route path='/scorecart' element={<ScoreCart />} />
-                </Routes>
+                 </Routes>
             </BrowserRouter>
         </div>
     )
